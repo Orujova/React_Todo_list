@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: teal;
+}
+
+input {
+  width: 80%;
+  padding: 10px 12px;
+  border: 0;
+}
+
+.submit {
+  background-color: rgb(35, 246, 67);
+}
+
+h1 {
+  background-color: #feca57;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  margin: 10px;
+}
+
+ul {
+  border: 1px solid #feca57;
+}
+
+div {
+  width: 90%;
+  margin: 18px auto;
+}
+
+p {
+  width: 100%;
+  font-weight: bold;
+}
+
+li {
+  margin: 12px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+li > div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10px;
+}
+
+.edit {
+  background-color: #f0fe57;
+}
+
+.delete {
+  background-color: #d84e2b;
+}
+
+button {
+  width: 20%;
+  padding: 10px 12px;
+  cursor: pointer;
+  border: 0;
+
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  li > div{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .edit,.delete{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+  .edit,.delete{
+   font-size: 12px;
+  }
+}
